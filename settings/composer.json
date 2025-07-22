@@ -1,0 +1,24 @@
+{
+    "name": "kahraman/kahraman-settings",
+    "description": "Ayarlar paketi",
+    "type": "library",
+    "version": "1.0.0",
+    "require": {
+        "php": "^8.0|^8.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kahraman\\KahramanSettings\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Kahraman\\KahramanSettings\\KahramanSettingsServiceProvider"
+            ],
+            "aliases": {
+                "KahramanSettings": "Kahraman\\KahramanSettings\\Facades\\KahramanSettings"
+            }
+        }
+    }
+} 
