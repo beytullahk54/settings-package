@@ -1,8 +1,12 @@
-# Kahraman Settings Paketi
+# Settings Package
 
 Laravel için ayarlar yönetim paketi.
 
 ## Kurulum
+
+```bash
+composer require beytullahk54/settings-package
+```
 
 Paket otomatik olarak Laravel tarafından keşfedilir ve yüklenir.
 
@@ -11,9 +15,13 @@ Paket otomatik olarak Laravel tarafından keşfedilir ve yüklenir.
 Ayarlar tablosunu oluşturmak için:
 
 ```bash
-php artisan migrate --path=packages/kahraman/settings/src/database/migrations
+php artisan migrate --path=packages/beytullahk54/settings-package/src/database/migrations
 ```
 
 ## Kullanım
 
-Paket `/kahraman-settings` route'u üzerinden erişilebilir.
+Paket `/settings-package` route'u üzerinden erişilebilir.
+
+## ServiceProvider
+
+Bu paket `Beytullahk54\SettingsPackage\SettingsPackageServiceProvider` kullanır.

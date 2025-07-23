@@ -1,10 +1,10 @@
 <?php
 
-namespace Kahraman\KahramanSettings;
+namespace Beytullahk54\SettingsPackage;
 
 use Illuminate\Support\ServiceProvider;
 
-class KahramanSettingsServiceProvider extends ServiceProvider
+class SettingsPackageServiceProvider extends ServiceProvider
 {
     public function register(){
         //$this->mergeConfigFrom(__DIR__.'/config/settings.php', 'settings');
