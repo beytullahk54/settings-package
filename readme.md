@@ -40,6 +40,11 @@ SettingFacade::getSetting('test');
 
 ## Özellikler
 
-- Paket geliştirmeleri ile birlikte type güncellemesi gelecektir
+
 - Ayar çekme işlemlerine cache özelliği getirdik
 - Bu paketin amacı ayarlarınızı kaydedebilmenizi sağlamaktır
+
+[ ] Cacheleme işlemi opsiyonel olarak değiştirilebilecektir.
+[ ] Settings tablo adı configten ayarlanabilme imkanı sağlanacaktır.
+[ ] Paket geliştirmeleri ile birlikte type güncellemesi gelecektir
+[ ] UI ile ayarlar görüntülenebilecektir.
