@@ -25,3 +25,25 @@ Paket `/settings-package` route'u üzerinden erişilebilir.
 ## ServiceProvider
 
 Bu paket `Beytullahk54\SettingsPackage\SettingsPackageServiceProvider` kullanır.
+
+## Proje'de Kullanımı
+
+```php
+use Beytullahk54\SettingsPackage\Facades\SettingFacade;
+```
+
+**Ayar eklemek için:**
+```php
+SettingFacade::setSetting('test', 'test34');
+```
+
+**Ayarı çekmek için:**
+```php
+SettingFacade::getSetting('test');
+```
+
+## Özellikler
+
+- Paket geliştirmeleri ile birlikte type güncellemesi gelecektir
+- Ayar çekme işlemlerine cache özelliği getirdik
+- Bu paketin amacı ayarlarınızı kaydedebilmenizi sağlamaktır

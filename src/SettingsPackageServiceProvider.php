@@ -7,9 +7,8 @@ use Beytullahk54\SettingsPackage\Services\SettingService;
 
 class SettingsPackageServiceProvider extends ServiceProvider
 {
-    public function register(){
-        //$this->mergeConfigFrom(__DIR__.'/config/settings.php', 'settings');
-        
+    public function register()
+    {
         $this->app->singleton(SettingService::class, function ($app) {
             return new SettingService();
         });
@@ -18,9 +17,7 @@ class SettingsPackageServiceProvider extends ServiceProvider
     public function boot(){
         $this->loadRoutesFrom(__DIR__ . '/routes/web.php');
         $this->loadMigrationsFrom(__DIR__.'/database/migrations');
-        //$this->loadTranslationsFrom(__DIR__.'/resources/lang', 'settings');
-        
-        // Facade alias'ını kaydet
+
         $this->app->alias(SettingService::class, 'settings');
     }
 }
