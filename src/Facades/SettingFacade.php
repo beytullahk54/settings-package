@@ -2,22 +2,13 @@
 
 namespace Beytullahk54\SettingsPackage\Facades;
 
+use Illuminate\Support\Facades\Facade;
 use Beytullahk54\SettingsPackage\Services\SettingService;
 
-class SettingFacade
+class SettingFacade extends Facade
 {
     protected static function getFacadeAccessor()
     {
         return SettingService::class;
-    }
-
-    public static function getSetting($key)
-    {
-        return static::getFacadeRoot()->getSetting($key);
-    }
-
-    public static function setSetting($key, $value) 
-    {
-        return static::getFacadeRoot()->setSetting($key, $value);
     }
 }
