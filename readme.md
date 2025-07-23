@@ -22,10 +22,6 @@ php artisan migrate --path=packages/beytullahk54/settings-package/src/database/m
 
 Paket `/settings-package` route'u üzerinden erişilebilir.
 
-## ServiceProvider
-
-Bu paket `Beytullahk54\SettingsPackage\SettingsPackageServiceProvider` kullanır.
-
 ## Proje'de Kullanımı
 
 ```php
